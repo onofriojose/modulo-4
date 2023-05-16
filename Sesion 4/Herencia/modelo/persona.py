@@ -32,7 +32,11 @@ class Persona:
 
     def get_tipo(self):
         print(f'Soy del tipo {self}')
+<<<<<<< HEAD
         return type(self)
+=======
+        print(type(self))
+>>>>>>> bb757d60f14d3adf3258a41b7dc2d1885891ad2f
         
     #funcion para imprimir el objeto en string
     def __str__(self):

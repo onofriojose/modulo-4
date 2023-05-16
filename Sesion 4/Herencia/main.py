@@ -1,4 +1,5 @@
 from modelo.persona import Persona
+<<<<<<< HEAD
 from modelo.supervisor import Supervisor
 from modelo.cliente import Cliente
 from service.cliente_service import ClienteService
@@ -40,3 +41,8 @@ if __name__ == '__main__':
 
 
 #cambios
+=======
+
+persona = Persona('Fulanito', 'Perez', '1-9')
+print(persona)
+>>>>>>> bb757d60f14d3adf3258a41b7dc2d1885891ad2f

@@ -15,4 +15,8 @@ class Supervisor(Persona):
     
     def __str__(self): #funcion para imprimir el objeto string en cualquier structura
         #return super().__str__() se comenta para definir un retorno personalizado para la clase supervisor
+<<<<<<< HEAD
         return f'Supervisor(nombre= {self._nombre}, apellido= {self._apellido}, rut= {self._rut}, area= {self._area} )'
+=======
+        return f'Supervisor(nombre= {self.nombre}, apellido= {self.apellido}, rut= {self.rut}, area= {self.area} )'
+>>>>>>> bb757d60f14d3adf3258a41b7dc2d1885891ad2f
