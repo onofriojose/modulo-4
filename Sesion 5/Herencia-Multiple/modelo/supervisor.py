@@ -12,6 +12,9 @@ class Supervisor(Persona):
     @area.setter
     def area(self, area):
         self._area = area
+
+    def imprimir_supervisor(self):
+        print(Supervisor)
     
     def __str__(self): #funcion para imprimir el objeto string en cualquier structura
         #return super().__str__() se comenta para definir un retorno personalizado para la clase supervisor

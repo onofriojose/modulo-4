@@ -16,4 +16,3 @@ class Cliente(Persona):
     def __str__(self):
         #return super().__str__()
         return f'Cliente(nombre= {self._nombre}, apellido= {self._apellido}, rut= {self._rut}, descuento= {self._descuento}%)'
-        return f'Cliente(nombre= {self._nombre}, apellido= {self._apellido}, rut= {self._rut}, descuento= {self._descuento})'
