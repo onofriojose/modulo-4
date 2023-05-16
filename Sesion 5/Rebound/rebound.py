@@ -23,27 +23,28 @@ Método es de C
 '''
 class A:
     def __init__(self):
-       print("Pertenezco a la clase A")
+        print("Pertenezco a la clase A")
     
     def metodo_a(self):
-       print("Método heredado de A")
+        print("Método heredado de A")
 
 class B:
     def __init__(self):
-      print("Clase B")
+        print("Clase B")
     
     def metodo_b(self):
-       print("Método heredado de B")
+        print("Método heredado de B")
 
-class C(B, A):
+class C(B, A): #al heredar el mas cercano a la izquerda se imprime primero el metodo __init__ de la clase B
     def __init__(self):
-      super().__init__()
-    
+        super().__init__()
+        A.__init__(self) #se agrega el metodo __init__ de la clase A para que tambien se imprima ya que se heredo primero el de la clase B
+
     def metodo_c(self):
-      print('Metodo de clase C')
+        print('Método de clase C')
+
 
 clase_c = C()
-print(clase_c)
-clase_c.metodo_b()
 clase_c.metodo_a()
+clase_c.metodo_b()
 clase_c.metodo_c()
