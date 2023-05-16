@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 from modelo.supervisor import Supervisor #importando a la clase Supervisor
 
 class SupervisorService:
@@ -13,7 +11,6 @@ class SupervisorService:
         supervisor = Supervisor(nombre, apellido, rut, area)
         print(f"Supervisor creado exitosamente: {supervisor}")
         return supervisor
->>>>>>> onofrio
 from modelo.supervisor import Supervisor #importando a la calase supervisor
 
 class SupervisorService:
@@ -25,8 +22,4 @@ class SupervisorService:
         
         #para crear un sssupervisor se realia una instancia de su constructor
         supervisor = Supervisor(nombre, apellido, rut, area)
-<<<<<<< HEAD
         print(f'Supervisor creado: {supervisor}')
-=======
-        print(f'Supervisor creado: {supervisor}')
->>>>>>> onofrio

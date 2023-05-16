@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 from modelo.cliente import Cliente #importando a la clase cliente
 
 class ClienteService:
@@ -13,7 +11,6 @@ class ClienteService:
         cliente = Cliente(nombre, apellido, rut, descuento)
         print(f"Cliente creado exitosamente: {cliente}")
         return cliente
->>>>>>> onofrio
 from modelo.cliente import Cliente #importando a la calase supervisor
 
 class ClienteService:
@@ -25,8 +22,4 @@ class ClienteService:
         
         #para crear un sssupervisor se realia una instancia de su constructor
         cliente = Cliente(nombre, apellido, rut, descuento)
-<<<<<<< HEAD
         print(f'Cliente creado: {cliente}')
-=======
-        print(f'Cliente creado: {cliente}')
->>>>>>> onofrio
