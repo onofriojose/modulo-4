@@ -16,6 +16,9 @@ class SupervisorZona(Supervisor, Capacidades):
         self._promedio = promedio
 
     def imprimir_supervisor_zona(self):
-        SupervisorZona.imprimir_supervisor(self)
         Capacidades.imprimir_capacidades(self)
         print(f'Promedio: {self._promedio}')
+    
+    def __str__(self): #funcion para imprimir el objeto string en cualquier structura
+        #return super().__str__() se comenta para definir un retorno personalizado para la clase supervisor
+        return f'Supervisor(nombre= {self._nombre}, apellido= {self._apellido}, rut= {self._rut}, area= {self._area}, certificados= {self._ncertificado}, raiting= {self._raiting}, promedio= {self._promedio} )'
