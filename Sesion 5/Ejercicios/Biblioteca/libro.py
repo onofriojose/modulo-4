@@ -45,5 +45,5 @@ class Libro:
         # libro = Libro(titulo, autor, anno)
         # print(libro)
 
-libro = Libro()
+libro = Libro('','','')
 libro.crear_libro()        

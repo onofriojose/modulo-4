@@ -8,6 +8,5 @@ while contador < 4:
         contador +=1
     except:
         print('Valor Errado: ingrese numero entero correcto')
-
-        
+    
 print("El resultado de la suma es: ", calculo_suma)

@@ -16,7 +16,15 @@ class Baraja:
         palos = ["Picas", "Corazones", "Diamantes", "Tréboles"]
         valores = ["As", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
         self.cartas = [Carta(valor, palo) for palo in palos for valor in valores]
-
+        '''
+        Explicación de la línea:
+        *self.cartas es un atributo de la instancia de la clase Baraja que almacenará todas las cartas de la baraja.
+        *Carta(valor, palo) crea una instancia de la clase Carta con el valor y palo actuales.
+        *La comprensión de listas anidada for palo in palos for valor in valores genera todas las combinaciones posibles de palos y valores,    creando así todas las cartas de la baraja.
+        Al finalizar esta línea de código, la lista self.cartas contendrá todas las cartas de la baraja, representadas como instancias de la clase Carta, en el orden en que se generaron.
+    
+        Esta parte del código se encarga de crear una baraja de cartas completa, con todas las combinaciones posibles de palos y valores.
+        '''
     def barajar(self):
         random.shuffle(self.cartas)
 
