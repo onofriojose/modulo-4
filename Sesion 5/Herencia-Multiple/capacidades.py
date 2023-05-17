@@ -4,18 +4,18 @@ class Capacidades:
         self._raiting = raiting
     
     @property
-    def ncertificadoget(self):
+    def ncertificado(self):
         return self._ncertificado
     
-    @ncertificadoget.setter
+    @ncertificado.setter
     def ncertificado(self, ncertificado):
         self._ncertificado = ncertificado
 
     @property
-    def raitingget(self):
+    def raiting(self):
         return self._raiting
     
-    @raitingget.setter
+    @raiting.setter
     def raiting(self, raiting):
         self._raiting = raiting
 

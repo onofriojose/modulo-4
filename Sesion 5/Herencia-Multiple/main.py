@@ -45,4 +45,5 @@ persona = SupervisorZona('Fulanito', 'Perez', '1-9', 'ventas', 4, 10.9, 5)
 print(persona)
 persona.imprimir_supervisor_zona()
 print('===============================================================================')
-persona_2 = SupervisorZona
+print(persona.apellido)
+persona.imprimir_supervisor()#usando el metodo de la clase supervisor

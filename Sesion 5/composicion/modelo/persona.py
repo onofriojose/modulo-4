@@ -32,8 +32,8 @@ class Persona:
 
     def get_tipo(self):
         print(f'Soy del tipo {self}')
-        print(type(self))
-        
+        return type(self)
+
     #funcion para imprimir el objeto en string
     def __str__(self):
         return f'Persona(nombre= {self._nombre}, apellido= {self._apellido}, rut= {self._rut}'

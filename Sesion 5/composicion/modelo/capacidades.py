@@ -12,10 +12,10 @@ class Capacidades:
         self._ncertificado = ncertificado
 
     @property
-    def raitingget(self):
+    def raiting(self):
         return self._raiting
     
-    @raitingget.setter
+    @raiting.setter
     def raiting(self, raiting):
         self._raiting = raiting
 
