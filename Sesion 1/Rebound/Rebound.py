@@ -7,13 +7,13 @@ class Animal:
         self.peso = peso
 
     def caminar(self):
-        print(f'El animal  {self.nombre} esta comiendo')
+        print(f'El animal  {self.nombre} esta caminando')
 
     def comer(self):
         print(f'El animal de raza {self.raza} esta comiendo')
 
     def dormir(self):
-        print(f'El animal de edad {self.edad} esta comiendo')
+        print(f'El animal de edad {self.edad} esta durmiendo')
 
 
 #definir una instancia animal para un objeto llamado perro
@@ -23,3 +23,4 @@ gato = Animal('Roll','Persa',4,3.0)
 
 
 gato.comer()
+perro.dormir()

@@ -23,7 +23,7 @@ class Persona:
         return self._apellido
     
     @apellido.setter
-    def get_apellido(self, apellido):
+    def apellido(self, apellido):
         self._apellido = apellido
     
     @property
@@ -70,7 +70,7 @@ print(f'El nombre de persona 1 es {persona_1.nombre} y su apellido es {persona_1
 print(persona_1)
 persona_1.nombre = 'Fulanito'
 print(persona_1.edad) #usando getter
-persona_1.edad = 21 #usando setter
+persona_1.edad = 21 #usando setter /// Modificando la edad de persona 1 a 21
 print(persona_1.edad) #mostrando nuevo valor
 
 print('==================================================================')
@@ -79,7 +79,7 @@ print('==================================================================')
 print(f'El nombre de persona 2 es {persona_2.nombre} y su apellido es {persona_2.apellido}')
 #imprimimos persona a traves del metodo definido por __str__
 print(persona_2)
-persona_2.nombre = 'Fulanito'
-print(persona_2.edad) #usando getter
+persona_2.apellido = 'Santiago' # /// Modificando el apellido de persona 2 a Santiago
+print(persona_2.apellido) #usando getter /// 
 persona_2.edad = 21 #usando setter
 print(persona_2.edad) #mostrando nuevo valor
