@@ -1,4 +1,4 @@
-class SupervisorZona():
+class SupervisorZona:
     def __init__(self, Supervisor, Capacidades):
         self._supervisor = Supervisor
         self._capacidades = Capacidades
