@@ -23,22 +23,25 @@ def main():#creando instancias para poder acceder a los servicios (clases)
         match opcion:
             case '1':
                 cliente_service.crear_cliente()
-                break
+                
             case '2':
                 supervisor_service.crear_supervisor()
-                break
+                
             case '3':
+                cliente_service.list_clientes()
+            case '4':
                 print('Saliendo del programa')
                 break
             case _:
                 print('Opcion no valida')
-                break
+                
 
 #funcion inicializadora para darle un punto de inicio al programa
 if __name__ == '__main__':
-    #main()
+    main()
     #instancia de cliente service para invocaar la instancia ClienteService
-    cliente_service = ClienteService()
+    #cliente_service = ClienteService()
     #accedemos a load_clientes mediante la instancia ClienteService
-    cliente_service.load_clientes()
+    #print(cliente_service.load_clientes())
+    
     

@@ -15,11 +15,11 @@ from io import open
 def crear_archivo():
     try:
         archivo = open('informacion.dat', 'x') #crea el archivo y escribe el contenido en caso que no existe. Debo volver a correr el codigo para imprimir el contenido
-        archivo.writelines('Datos de información en la línea 1\n'
-                           'Datos de información en la línea 2\n'
-                           'Datos de información en la línea 3\n'
-                           'Datos de información en la línea 4\n'
-                           'Datos de información en la línea 5')
+        archivo.writelines('Datos de informacion en la línea 1\n'
+                           'Datos de informacion en la línea 2\n'
+                           'Datos de informacion en la línea 3\n'
+                           'Datos de informacion en la línea 4\n'
+                           'Datos de informacion en la línea 5')
         print(archivo.read)
         archivo.close()
     except FileExistsError:
