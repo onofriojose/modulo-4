@@ -20,8 +20,9 @@ class AutomovilService:
         num = 0
         
         for linea in self._automoviles:
-            num = num+1
-            print(f'Datos del vehiculo {num}: {linea}')
+            if isinstance(linea, Automovil):
+                num = num+1
+                print(f'Datos del vehiculo {num}: {linea}')
             
             
 '''
